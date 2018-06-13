@@ -11,10 +11,27 @@
 
 -------
 
+#### 简介
+
 语言：python3  
 框架：django2.0、bootstrap、jQuery  
-数据库：MySQL（可以改设置，使用其它数据库）
+数据库：MySQL（可以改设置，使用其它数据库）  
 在学习django的过程中，跟着教程写下来的博客。  
 如果您觉得好或者也想学习django，可以去B站看一下那个教程。
+
+#### 图示
+
+![index](image/index.png)
+首页
+
+![blog_list](image/blog_list.png)
+博客列表
+
+![blog_type_django](image/blog_type_django.png)
+![blog_type_type_ganwu](image/blog_type_ganwu.png)
+博客分类列表
+
+![blog_detail](image/blog_detail.png)
+博客详情
 
 **随着学习的深入，还会不断更新修改这个项目，TO BE CONTINUE**
