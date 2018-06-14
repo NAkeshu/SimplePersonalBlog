@@ -82,16 +82,31 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">博客分类</div>
                     <div class="panel-body">
-                        <ul class="blog-types">
+                        <ul class="blog-types list-group">
                             {% for blog_type in blog_types %}
-                                <li>
+                                <li class="list-group-item">
                                     <a href="{% url 'blogs_with_type' blog_type.pk %}">
-                                        {{ blog_type.type_name }}
+                                        {{ blog_type.type_name }} ({{ blog_type.blog_count }})
                                     </a>
                                 </li>
                             {% empty %}
                                 <li>暂无分类</li>
                             {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">日期归档</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            {% for blog_date, blog_count in blog_dates.items %}
+                                <li class="list-group-item">
+                                    <a href="{% url 'blogs_with_date' blog_date.year blog_date.month %}">
+                                        {{ blog_date|date:"Y年m月" }}({{ blog_count }})
+                                    </a>
+                                </li>
+                            {% endfor %}
+
                         </ul>
                     </div>
                 </div>
