@@ -23,9 +23,13 @@ web框架：django2.0
 #### 使用介绍
 
 将项目克隆到本地
-	git clone git@github.com:NAkeshu/SimplePersonalBlog.git
+```bash
+git clone git@github.com:NAkeshu/SimplePersonalBlog.git
+```
 然后进入项目目录
-	cd SimplePersonalBlog
+```shell
+cd SimplePersonalBlog
+```
 修改`/testsite/settings`文件中的`DATABASE`参数
 ```python
 DATABASES = {
@@ -40,12 +44,18 @@ DATABASES = {
 }
 ```
 初始化数据库
-	python manage.py migrate
+```bash
+python manage.py migrate
+```
 再新建个管理员用户
-	python manage.py createsuperuser
+```bash
+python manage.py createsuperuser
+```
 然后依次输入用户名（可跳过，默认admin）、邮箱地址（可跳过）、密码即可。
 最后启动本地服务器
-	python manage.py runserver
+```bash
+python manage.py runserver
+```
 在浏览器输入地址`localhost:8000`即可，输入地址`localhost:8000/admin`即可进入后台。
 
 #### 截图
