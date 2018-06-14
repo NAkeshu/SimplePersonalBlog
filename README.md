@@ -81,7 +81,4 @@ python manage.py runserver
 ![后台文章列表](https://i.loli.net/2018/06/14/5b22408b7a080.png)
 后台
 
-![terminal](readme-image/terminal.png)
-终端
-
 **随着学习的深入，还会更新修改这个项目，TO BE CONTINUE**
