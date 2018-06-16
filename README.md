@@ -27,7 +27,7 @@ web框架：django2.0
 git clone git@github.com:NAkeshu/SimplePersonalBlog.git
 ```
 然后进入项目目录
-```shell
+```bash
 cd SimplePersonalBlog
 ```
 修改`/testsite/settings`文件中的`DATABASE`参数
@@ -74,11 +74,13 @@ python manage.py runserver
 日期归档
 
 ![blog_detail](https://i.loli.net/2018/06/14/5b223f6f5c42f.png)
+![blog_detail_withpic](https://i.loli.net/2018/06/16/5b24ac95a8965.png)
 博客详情
 
 ![后台](https://i.loli.net/2018/06/14/5b22406913c35.png)
 ![后台文章类型](https://i.loli.net/2018/06/14/5b2240787fcd0.png)
 ![后台文章列表](https://i.loli.net/2018/06/14/5b22408b7a080.png)
+![后台文章编辑](https://i.loli.net/2018/06/16/5b24accbd028d.png)
 后台
 
 **随着学习的深入，还会更新修改这个项目，TO BE CONTINUE**
