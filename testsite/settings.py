@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog',
     'ckeditor', # 富文本编辑器
     'ckeditor_uploader', # 上传图片
+    'read_statistics',
 ]
 
 MIDDLEWARE = [
