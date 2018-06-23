@@ -15,7 +15,7 @@
 
 语言：python3、HTML、CSS、JavaScript  
 web框架：django2.0  
-前端框架：bootstrap、jQuery  
+前端框架：bootstrap、jQuery、HIGHCHARTS  
 数据库：MySQL  
 在学习django的过程中，跟着教程写下来的博客。  
 如果您觉得好或者也想学习django，可以去B站看一下[这个教程](http://space.bilibili.com/252028233/#/channel/detail?cid=28138)。
@@ -60,7 +60,7 @@ python manage.py runserver
 
 #### 截图
 
-![index](https://i.loli.net/2018/06/14/5b22405624111.png)
+![index](https://i.loli.net/2018/06/23/5b2e598d32029.png)
 首页
 
 ![blog_list](https://i.loli.net/2018/06/14/5b223fbd87818.png)

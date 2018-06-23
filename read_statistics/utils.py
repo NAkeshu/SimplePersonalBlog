@@ -1,18 +1,34 @@
+import datetime
 from django.contrib.contenttypes.models import ContentType
-from .models import ReadNum
+from django.utils import timezone
+from django.db.models import Sum
+from .models import ReadNum, ReadDetail
 
 def read_statistics_once_read(request, obj):
     ct = ContentType.objects.get_for_model(obj)
     key = "%s_%s_read" % (ct.model, obj.pk)
 
     if not request.COOKIES.get(key):
-        if ReadNum.objects.filter(content_type=ct, object_id=obj.pk).count():
-            # 存在记录
-            readnum = ReadNum.objects.get(content_type=ct, object_id=obj.pk)
-        else:
-            # 不存在对应记录
-            readnum = ReadNum(content_type=ct, object_id=obj.pk)
-        # 计数加一
+        # 总阅读数+1
+        readnum, created = ReadNum.objects.get_or_create(content_type=ct, object_id=obj.pk)
         readnum.read_num += 1
         readnum.save()
+
+        # 当天阅读数+1
+        date = timezone.now().date()
+        readDtail, created = ReadDetail.objects.get_or_create(content_type=ct, object_id=obj.pk, date=date)
+        readDtail.read_num += 1
+        readDtail.save()
     return key
+
+def get_seven_days_read_data(content_type):
+    today = timezone.now().date()
+    dates = []
+    read_nums = []
+    for i in range(6, -1, -1):
+        date = today - datetime.timedelta(days=i)
+        dates.append(date.strftime('%m/%d'))
+        read_details = ReadDetail.objects.filter(content_type=content_type, date=date)
+        result = read_details.aggregate(read_num_sum=Sum('read_num'))
+        read_nums.append(result['read_num_sum'] or 0)
+    return dates, read_nums
