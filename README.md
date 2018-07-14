@@ -51,16 +51,36 @@ python manage.py migrate
 ```bash
 python manage.py createsuperuser
 ```
-然后依次输入用户名（可跳过，默认admin）、邮箱地址（可跳过）、密码即可。
+然后依次输入用户名（可跳过，默认admin）、邮箱地址（可跳过）、密码即可。  
+再输入
+```bash
+python manage.py createcachetable
+```
+来创建缓存表。  
 最后启动本地服务器
+
 ```bash
 python manage.py runserver
 ```
-在浏览器输入地址`localhost:8000`即可，输入地址`localhost:8000/admin`即可进入后台。
+在浏览器输入地址`localhost:8000`即可访问博客，输入地址`localhost:8000/admin`即可进入后台。
+
+#### 现有功能
++ 首页通过图表显示近七天阅读量
++ 博客列表分页展示
++ 博客分类展示
++ 显示阅读数
++ 显示写作时间
++ 可以通过分类来查看博客列表
++ 通过日期归档查看博客列表
++ 首页显示近期（今日、昨日、七日）热门博客
++ 通过缓存提高热门博客加载速度
++ 后台管理（其实是django自带的）
++ 可以通过富文本格式编辑文章
++ 优化页面效果（轻度优化~~，还是很丑就是了orz~~）
 
 #### 截图
 
-![index](https://i.loli.net/2018/06/23/5b2e598d32029.png)
+![index](https://i.loli.net/2018/07/14/5b49e0c531cd9.png)
 首页
 
 ![blog_list](https://i.loli.net/2018/06/14/5b223fbd87818.png)

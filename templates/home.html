@@ -18,6 +18,47 @@ active
     <h3 class="home-content">欢迎访问我的网站，随便看<br><a href="{% url 'blog_list' %}">查看博客</a></h3>
     <!-- 图表容器 DOM -->
     <div id="container"></div>
+    <div class="hot-data">
+        <h3>今日热门点击</h3>
+        <ul>
+            {% for hot_data in today_hot_data %}
+                <li>
+                    <a href="{% url 'blog_detail' hot_data.content_object.pk %}">
+                        {{ hot_data.content_object }}
+                    </a>
+                    ({{ hot_data.read_num }})
+                </li>
+            {% empty %}
+                <li>今日暂时没有热门博客</li>
+            {% endfor %}
+        </ul>
+        <h3>昨日热门点击</h3>
+        <ul>
+            {% for hot_data in yesterday_hot_data %}
+                <li>
+                    <a href="{% url 'blog_detail' hot_data.content_object.pk %}">
+                        {{ hot_data.content_object }}
+                    </a>
+                    ({{ hot_data.read_num }})
+                </li>
+            {% empty %}
+                <li>昨日暂时没有热门博客</li>
+            {% endfor %}
+        </ul>
+        <h3>7日热门文章</h3>
+        <ul>
+            {% for hot_blog in hot_blogs_for_7_days %}
+                <li>
+                    <a href="{% url 'blog_detail' hot_blog.id %}">
+                        {{ hot_blog.title }}
+                    </a>
+                    ({{ hot_blog.read_num_sum }})
+                </li>
+            {% empty %}
+                <li>近七日暂时没有热门博客</li>
+            {% endfor %}
+        </ul>
+    </div>
     <!-- 引入 highcharts.js -->
     <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
     <script>
@@ -32,6 +73,7 @@ active
             xAxis: {
                 categories: {{ dates|safe }},                      // x 轴分类
                 tickmarkPlacement: 'on',
+                title: { text: '最近七日阅读量' },
             },
             yAxis: {
                 title: {
