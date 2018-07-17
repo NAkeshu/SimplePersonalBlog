@@ -76,6 +76,7 @@ python manage.py runserver
 + 通过缓存提高热门博客加载速度
 + 后台管理（其实是django自带的）
 + 可以通过富文本格式编辑文章
++ 增加登陆功能
 + 优化页面效果（轻度优化~~，还是很丑就是了orz~~）
 
 #### 截图
@@ -93,11 +94,12 @@ python manage.py runserver
 ![日期归档](https://i.loli.net/2018/06/14/5b223f83462a1.png)
 日期归档
 
-![blog_detail](https://i.loli.net/2018/06/14/5b223f6f5c42f.png)
+![blog_detail_without_logined](https://i.loli.net/2018/07/17/5b4da2a52dfe3.png)
+![blog_detail_with_logined](https://i.loli.net/2018/07/17/5b4da1f6d0944.png)
 ![blog_detail_withpic](https://i.loli.net/2018/06/16/5b24ac95a8965.png)
 博客详情
 
-![后台](https://i.loli.net/2018/06/14/5b22406913c35.png)
+![后台](https://i.loli.net/2018/07/17/5b4da2cc6b743.png)
 ![后台文章类型](https://i.loli.net/2018/06/14/5b2240787fcd0.png)
 ![后台文章列表](https://i.loli.net/2018/06/14/5b22408b7a080.png)
 ![后台文章编辑](https://i.loli.net/2018/06/16/5b24accbd028d.png)
