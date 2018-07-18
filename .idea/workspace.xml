@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300e021a-2059-4e7c-8ae6-35c55fe65ba1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blog_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blog_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testsite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -220,8 +213,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
-    <option name="y" value="47" />
+    <option name="x" value="883" />
+    <option name="y" value="58" />
     <option name="width" value="1036" />
     <option name="height" value="1007" />
   </component>
@@ -358,12 +351,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531568427918</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加登陆功能">
+      <created>1531814762413</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531814762413</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="47" width="1036" height="1007" extended-state="0" />
-    <editor active="true" />
+    <frame x="664" y="30" width="1036" height="1007" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50098234" side_tool="true" weight="0.3337029" />
@@ -398,7 +397,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完善了阅读数、并使其在首页可见" />
     <MESSAGE value="添加近期（今日、昨日、七天）热门点击博客排行，并且通过缓存加速加载" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加近期（今日、昨日、七天）热门点击博客排行，并且通过缓存加速加载" />
+    <MESSAGE value="增加登陆功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加登陆功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
