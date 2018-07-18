@@ -1,6 +1,6 @@
 简易个人博客
 ===
-
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 ### **这个项目是跟着[BILIBILI上杨仕航老师的django教程](http://space.bilibili.com/252028233/#/channel/detail?cid=28138)一步一步打下来的，完全不原创**
 
 ### **非常感谢杨老师的视频教程！教程通俗易懂，由浅入深，非常有实用性，推荐想入坑django的小伙伴去B站看一看。**
@@ -76,7 +76,7 @@ python manage.py runserver
 + 通过缓存提高热门博客加载速度
 + 后台管理（其实是django自带的）
 + 可以通过富文本格式编辑文章
-+ 增加登陆功能
++ 登录后可在文章下进行评论
 + 优化页面效果（轻度优化~~，还是很丑就是了orz~~）
 
 #### 截图
@@ -94,8 +94,8 @@ python manage.py runserver
 ![日期归档](https://i.loli.net/2018/06/14/5b223f83462a1.png)
 日期归档
 
-![blog_detail_without_logined](https://i.loli.net/2018/07/17/5b4da2a52dfe3.png)
-![blog_detail_with_logined](https://i.loli.net/2018/07/17/5b4da1f6d0944.png)
+![blog_detail_without_logined](https://i.loli.net/2018/07/18/5b4ef256c9a7b.png)
+![blog_detail_with_logined](https://i.loli.net/2018/07/18/5b4ef233b2920.png)
 ![blog_detail_withpic](https://i.loli.net/2018/06/16/5b24ac95a8965.png)
 博客详情
 
